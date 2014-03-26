@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<!--Desmond Darveau
+	A00718693
+	03/24/2014
+	client_project.php
+	Contains project notes-->
+
+<!--#include file="inc/head.inc" -->
+<!--#set var="page_title" value="Home" -->
+
+<!--#include file="inc/menu.inc" -->
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Project Notes</h1>
+		</div>
+	<div id="content">
+		<h2>Phase 1: Definition</h2>
+			<h3>Creative Brief</h3>
+				<h4>Project Goals</h4>
+					<ul>
+						<li>Create a repository of information for students</li>
+						<li>Should acknowledge prospective students and alumni</li>
+						<li>Should be easy to maintain</li>
+					</ul>
+				<h4>Timeline</h4>
+					<p>Deadline for proto-site and all supporting documents is 6:30pm April 25, 2014.  A list of project team members  have already been sent to instructor.  No other preliminaries are required.</p>
+				<h4>Budget</h4>
+					<p>No budget has been explicitly agreed upon.   However, below is an estimate of our costs.</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Hourly Rate</th><th>Staff</th><th>Cost Per Hour</th><th>Estimated Time (hours) Required</th><th>Total Estimate Cost</th>
+							</tr>
+							<tr>
+								<td>25</td><td>5</td><td>125</td><td>8</td><td>1000</td>
+							</tr>
+					</table>
+				<h4>Team</h4>
+					<ul>
+						<li>Henry Han (xantosuex@hotmail.com) GITHUB: Xantosuex</li>
+						<li>Desmond Darveau (ddarveau@my.bcit.ca)</li>
+						<li>Cindy Lee (s.cindy.lee@gmail.com)</li>
+						<li>Sanka (sanka7752@yahoo.com)</li>
+						<li>Preston Jang (prestonjang1520@gmail.com)</li>
+					</ul>
+
+				<h4>Team Contributions</h4>
+					<ul>
+						<li>Henry Han<br />
+							<ul>
+								<li>Site Code Architecture</li>
+								<li>JQuery, CSS, HTML</li>
+							</ul>
+						<li>Desmond Darveau<br />
+							<ul>
+								<li>Project planning</li>
+								<li>Documentation</li>
+								<li>Budgeting</li>
+							</ul>
+						<li>Cindy Lee<br />
+									<ul>
+										<li>Layout Planning</li>
+										<li>Wireframes</li>
+										<li>Color Schemes</li>
+									</ul>
+						<li>Sanka<br />
+							<ul>
+								<li>Site Navigation</li>
+								<li>JQuery, CSS, HTML</li>
+							</ul>
+						<li>Preston Jang<br />
+							<ul>
+								<li>Client Contact</li>
+								<li>BLOG Implementation</li>
+					</ul>
+
+
+				<h4>Project Plan</h4>
+
+
+		<h2>Phase 2: Site Development</h2>
+		<h2>Phase 3: Design</h2>
+		<h2>Phase 4: Production & Testing</h2>
+		<h2>Phase 5: Launch</h2>
+
+
+
+	</div><!--End content -->
+	</div><!--End container -->
+ 
+		<div id="footer">
+			<p>Copyright &copy; 2014</p>
+			<p><a href='http://validator.w3.org/check?uri=referer'>Validate Page</a></p>
+		</div><!--End footer -->
+	</div><!--End container -->
+</body>
+<!--#include file="inc/foot.inc" -->
+</html>

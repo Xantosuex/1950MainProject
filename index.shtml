@@ -1,0 +1,17 @@
+<!doctype html>
+<!--Desmond Darveau
+	A00718693
+	03/25/2014
+	index.shtml
+	Protosite Docs - Index.-->
+
+<!--#include file="inc/head.inc" -->
+<!--#set var="page_title" value="Home" -->
+
+<!--#include file="inc/menu.inc" -->
+	<div class='content'>
+		<h1>IT Sensations Home</h1>
+			<p>If you know IT Sensations, you know the leaders in COMP1950 proto-site development.  Look no further for the answer to all your web design needs.</p>
+	</div><!--End content-->
+<!--#include file="inc/foot.inc" -->
+</html>
