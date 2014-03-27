@@ -3,15 +3,14 @@
 		width: 100%;
 	}
 	body{
-
+		font-family: Roboto, verdana, arial, helvetica, sans-serif;
 		width: 100%;
 		font-size: 18px;
 		line-height: 25px;
-		background: #fff;
-		
-		font-family: verdana, arial, helvetica, sans-serif;
+		background: #fafafa;
 	}
-	a{		
+	a{	
+		font-family: Roboto verdana, arial, helvetica, sans-serif;	
 		color: #EE6600;
 		text-decoration: none;
 	}
@@ -23,6 +22,7 @@
 		padding-left: 12%;
 	}
 	h1{
+		font-family: Roboto verdana, arial, helvetica, sans-serif;
 		padding-left: 4%;
 		font-size: 20px;
 		height: 30px;
@@ -34,16 +34,18 @@
 
 	}
 	h2 {
-	background-color: #DDDDDD;
+	font-family: Roboto Condensed verdana, arial, helvetica, sans-serif;
+	background-color: #ffffff;
 	margin: 15px 0px 3px 0px;
 	padding: 3px 18px;
-	font-size: 24px;
+	font-size: 22px;
 	color: #333;
-	border: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-left: 5px solid #ff8b13;
 	}
 
 	h3 {
-	font: bold 1.2em Georgia, "Times New Roman", Serif;
+	font-family: Roboto Condensed verdana, arial, helvetica, sans-serif;
 	color: #333;
 	}
 	dt{
@@ -59,6 +61,20 @@
 		font-size: 15px;
 		font-style: italic;
 		font-weight: bold;
+	}
+	footer{
+		font-size: 10px;
+		padding-left: 15px;
+		padding-top: 5px;
+		margin-top: 10px;
+		height: 30px;
+		background-color: #222222;
+		color: white;
+	}
+	footer a{
+		color: white;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	#navigation{
 		position: fixed;			
@@ -103,12 +119,11 @@
 		padding-right: 7%;
 	}
 	#right-content{
-		display: none;
 		position: fixed;
-		width: 70%;
+		width: 60%;
 		height: 100%;
 		background-color: #DDDDDD;
-		top: 0;
+		top: 56px;
 		left: 0;
 	}
 	.content-block{
@@ -116,7 +131,7 @@
 		padding-right: 5%;
 		padding-top: 10px;
 		padding-bottom: 20px;
-		background-color: #F0F0F0;
+		background-color: #ffffff;
 	}
 	.intro{
 		padding-bottom: 18px;
@@ -138,8 +153,6 @@
 		padding-left: 8%;
 		font-weight: bold;
 		font-size: 12px;
-		width: 92%;
-	
 }
 
 	
