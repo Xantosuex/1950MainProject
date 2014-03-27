@@ -1,6 +1,9 @@
 @media screen and (min-width: 0px){
-
+	img{
+		width: 100%;
+	}
 	body{
+
 		width: 100%;
 		font-size: 18px;
 		line-height: 25px;
@@ -8,11 +11,12 @@
 		
 		font-family: verdana, arial, helvetica, sans-serif;
 	}
-	a{
+	a{		
 		color: #EE6600;
 		text-decoration: none;
 	}
 	a:hover{
+
 		color: #FF8865;
 	}
 	ol, ul {
@@ -37,6 +41,7 @@
 	color: #333;
 	border: 1px solid #ddd;
 	}
+
 	h3 {
 	font: bold 1.2em Georgia, "Times New Roman", Serif;
 	color: #333;
@@ -55,7 +60,26 @@
 		font-style: italic;
 		font-weight: bold;
 	}
-	#titlebar{
+	#navigation{
+		position: fixed;			
+		padding-top:1px;  
+		height: auto;
+		width: 100%;
+		background-color: white;
+		float: left;
+	}
+	#banner h1{
+		display: none;
+	}
+	#navigation img{
+		width: 32%;
+		border-right: 1% solid white;
+	}
+	#navigation a{
+		background-color: #222222;
+		padding-top: 50px;	
+		}
+	#titlebar{		
 		width: 95%;
 		background-color:#003300; 
 		height: 25px;
@@ -67,17 +91,19 @@
 		font-size: 13px;
 		font-weight: bold;
 	}
-	#banner{
-		height: 80px;
-		background-color:#70A011;
+	#banner{	
+		height: auto;	
+		padding-top: 55px;
+		background-color:#ff8b13;
 	}
+	
 	#main-content{
 		width: 86%;
 		padding-left: 7%;
 		padding-right: 7%;
 	}
 	#right-content{
-		
+		display: none;
 		position: fixed;
 		width: 70%;
 		height: 100%;
