@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Working with git, jQuery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="http://www.thenet.ca/1950/css/comp1.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="http://www.thenet.ca/1950/css/print.css" media="print">
+  <link rel="alternate stylesheet" type="text/css" href="../css/overhead.css" title="Overhead" media="screen" />
+	
+</head>
+<body id="body">
+<a name="top"></a>
+
+<div id="banner">
+<h1>Intermediate Web Design &amp; Development</h1>
+
+</div>
+
+<div id="titlebar">comp 1950 &gt; jQuery</div>
+<div id="docbox">
+<div id="main-content">            
+  
+        <h2>
+           agenda
+        </h2>
+        <div class="content-block">
+           <ul>
+		<li>From last week:<ul>
+				<li>Methodology: Review</li>
+				</ul></li>
+		<li>git Introduction</li>
+		<li>jQuery Introduction</li> 
+		<li>Project Work</li>
+	</ul></li>
+
+        </div>
+  
+
+
+
+
+
+
+
+<h2>What is Git?</h2>
+<div class="content-block">	
+<ul>
+<li>git is a Version Control System (VCS). Open source, created by Linus Torvalds of Linux fame.</li>
+<li>it allows you to update, change, track all of your changes to any code you are working on</li>
+<li>git is installed on your system (Win/Mac/Lin) and “watches” files and directories for changes</li>
+<li>A hidden directory (.git) is added to the location where you want your files tracked</li>
+<li>From then on, any changes to files in that directory or any sub-directory are tracked</li>
+<li>You can then keep versions of them within a repository</li>
+<li>A repository (or repo) is an area that tracks your files and any changes made to them</li>
+<li>You can make changes to a file, realize the changes caused a problem and “roll-back” those changes to an earlier version</li>
+<li>You can also share code with others without having to create login credentials for people on an FTP server</li>
+<li>Repos can be public or private, can be on local or remote systems and can be very large or very small (1 file)</li>
+<li>Version control is a great way to avoid having 15 versions of index.shtml (index.shtml.old, index.shtml.orig, index.shtml.do-not-delete, etc.)</li>
+<li>Beyond just having different versions of a file, you can actually SEE what has changed</li>
+<li>Some diff (seeing the changes - ie: difference) applications are built into some Git management tools, others are standalone</li>
+</ul>
+</div>
+
+<h2>Where to use Git?</h2>
+<div class="content-block">	
+<ul>
+<li>Git can be installed on almost any system (Win/Mac/Lin) as a client and the server is fairly well deployed as well. </li>
+<li>If you don’t have access to a Git server, there are a few services that allow you to do the same. The most well-known, and used, is <a href="http://github.com">GitHub</a>. </li>
+<li>For today, we will be creating a GitHub account, then installing the software an going over the basics.</li>
+</ul>
+</div>
+
+<h2>Create GitHub account</h2>
+<div class="content-block">	
+<ul>
+<li>Sign up for a <a href="https://github.com/signup/free">free account on GitHub</a>. </li>
+<li>The process is very quick and gets you an account right away.</li>
+</ul>
+</div>
+
+<h2>Install Git and GitHub GUI</h2>
+<div class="content-block">	
+<ul>
+<li>While you can use the command line version of git, we are going to take a simpler introduction: using the GUI (Graphical User Interface). </li>
+<li>The process can take a while to install, so download the version appropriate for your system:
+<ul>
+<li><a href="http://github-windows.s3.amazonaws.com/GitHubSetup.exe">Download the Windows client</a></li>
+<li><a href="https://central.github.com/mac/latest">Download the Mac client</a></li>
+</ul></li>
+<li>Each of these will install both the git client software (that watches all your files) as well as the GUI</li>
+<li>Depending on the speed of your system (and the admin rights allowed) it could take up to 10 minutes to get the software installed</li>
+</ul>
+</div>
+
+
+<h2>Create your own Repo</h2>
+<div class="content-block">	
+<ul>
+<li>Once the software is up and running, you will be able to log into your newly created account</li>
+<li>The system will likely recognize you have no repositories created yet, and ask if you want to create one.  </li>
+<li>Creating a repo in the GUI will do two things:
+<ul>
+<li><em>Remote:</em> Create a repository at GitHub that will house a copy of your files. </li>
+<li><em>Local:</em> Create a directory to hold files that you will edit and update locally.</li>
+</ul></li>
+<li>The terms <em>Local</em> and <em>Remote</em> are very important. They refer to where the files sit physically, but also where the “master” is located: remotely.</li>
+<li>Give the new repo a <strong>Name</strong> (a file-friendly name: no spaces), <strong>Description</strong> and chose a <strong>Location</strong> on your system for the local files</li>
+<li>Make sure that “Push to GitHub” is selected and then click “Create”</li>
+<li>You’ve created a repo!</li>
+</ul>
+</div>
+
+
+<h2>Adding Files</h2>
+<div class="content-block">	
+<ul>
+<li>From here on in, adding files is fairly easy. You can add them in Explorer/Finder and git will track which ones are new or have changed.</li>
+<li>Initially, we can <em>commit</em> and <em>push</em> the 2 files that are automatically created (.gitattributes and .gitignore), however, we should create a README file so that anyone browsing the instance will know what is going on.</li>
+<li>From the GitHub GUI, right-click on your newly created repo and select “Open in Explorer”</li>
+<li>Here is where we will create README.md (a Markdown file)</li>
+<li>Once the file has been created, you can <em>commit</em> the file. This adds it to a <em>local staging</em> area, but it has not yet been <em>pushed</em> to GitHub.</li>
+<li>Back in the GitHub GUI, click the arrow to the right of your Repo name.</li>
+<li>This shows all the files that have been changed or updated</li>
+<li>In order to ready your files to be <em>pushed</em> to GitHub, enter a <em>commit</em> message and (optionally) a more detailed description, then click <strong>commit</strong>.</li>
+<li>Now your files are <em>committed</em> but still not <em>pushed</em>.  </li>
+<li>At the top of the window, above the files, click on “publish”. This <em>pushes</em> all the <em>commits</em> to the <em>remote repo</em>.</li>
+</ul>
+</div>
+
+<h2>Reviewing changes</h2>
+<div class="content-block">	
+<ul>
+<li>Your files should now be on <a href="https://github.com">GitHub</a>. You can check by going back to your account and checking to see what repos are there, and what files are in that repo. </li>
+<li>There are a few ways to see changes - clicking on the time it was edited, or viewing the changed files through the GUI.</li>
+<li>You can also <em>edit</em> any of the text-based files right on GitHub, and then get the GUI to <em>pull</em> the changed back to your local machine.</li>
+</ul>
+</div>
+
+
+<h2>Collaborative code editing</h2>
+<div class="content-block">	
+<ul>
+<li>I have created a small repo (just 1 file) that is for our jQuery lecture, and I want to share it with all of you.</li>
+<li>The easiest way for you to do it is to search, browse or find the repo. Here is a link to it directly: <a href="https://github.com/alistaircom/showhide">ShowHide Example</a></li>
+<li>Once there, you can <em>clone</em> this version for yourself</li>
+<li>This will bring down the file(s) and all of the changes that are related</li>
+<li>If the author (me) makes any further changes, you can even <em>sync</em> those changes to grab all the updated copy.</li>
+<li>if you want to create your own separate project from someone else’s, you can instead <em>fork</em> the project, which splits off the project onto it’s own <em>branch</em>. </li>
+<li>Forked projects do not get code updates (unless explicitly requested) and allow you to continue on where someone else left off.</li>
+<li>We won’t be doing any forking today.</li>
+</ul>
+</div>
+
+
+<h2>Only the basics</h2>
+<div class="content-block">	
+<ul>
+<li>We have only covered the mere basics of Git and GitHub today!</li>
+<li>There is a LOT more it can do and can save your bacon when you have your code committed and versioned properly</li>
+<li>Git takes much of the work out of keeping versions of your code, but it doesn’t come easy</li>
+<li>Like any other technical skill it takes practice, discipline and commitment to keep it going.</li>
+</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<h2>What is JavaScript?</h2>	
+<div class="content-block">	
+<ul>
+	<li>From <a href="http://en.wikipedia.org/wiki/JavaScript" title="Wikipedia">Wikipedia</a>: <blockquote>
+		<p>JavaScript is a scripting language most often used for client-side web development. JavaScript was influenced by many languages and was designed to have a similar look to Java, but be easier for non-programmers to work with.</p>
+	</blockquote> </li>
+	<li>JavaScript is easy - right?</li>
+	<li>For many web developers, JavaScript is another language that they need to learn</li>
+	<li>Many people simply steal and re-use</li>
+	<li>There <em>must</em> be an easier way</li>
+</ul>
+</div>	
+
+<h2>Libraries &amp; Frameworks</h2>
+<div class="content-block">
+	<ul>
+		<li><a href="http://www.prototypejs.org/" title="Prototype">Prototype</a> - one of the first libraries, still very good</li>
+		<li><a href="http://script.aculo.us/" title="script.aculo.us">script.aculo.us</a> - One of the best effects libraries, uses Prototype Lirary</li>
+		<li><a href="http://mootools.net/" title="Mootools">Mootools</a> - a more recent player with some excellent UI effects</li>
+	</ul>
+</div><!-- .content-block -->
+
+<h2>jQuery</h2>
+<div class="content-block">
+<ul>
+	<li>jQuery is a JavaScript Library</li>
+	<li>Designed especially for making JS manipulations easier</li>
+	<li>Fairly small footprint (smaller than an average image)</li>
+	<li>Gives access to any DOM element</li>
+	<li>If you can access the element from CSS (level 1-3), you can access it from jQuery</li>
+	<li>Very little requirement to change any HTML</li>
+	<li>Syntax is a little scary at first, but easy to pick up</li>
+	<li>The main reason I chose it for this course - simpler syntax, full CSS accessibility</li>
+</ul>
+</div>
+
+<h2>jQuery Requirements</h2>
+<div class="content-block">
+<ul>
+	<li>Inclusion of the jQuery code in your HTML:</li>
+	<li><a href="http://docs.jquery.com/Downloading_jQuery" title="Download from jQuery">Download from jQuery</a></li>
+	<li>Three main forms:
+		<ul>
+			<li>Uncompressed - best for reviewing the code</li>
+			<li>Packed - most often used for production systems</li>
+			<li>Minified - used for systems with Unix backend (requires GZip)</li>
+		</ul> </li>
+	<li>Or, can be done directly from jQuery:
+		<ul>
+			<li><pre>
+&lt;script src="http://code.jquery.com/jquery-latest.js"&gt; &lt;/script&gt;
+			</pre></li>
+		</ul> </li>
+	<li>Need to include your own code either as an embedded block or linked to an external file</li>
+	<li>Basic functions are very easy to write</li>
+	<li>Works in almost all browsers (including IE6! - Mostly)</li>
+</ul>	
+	
+</div><!-- .content-block -->
+
+
+
+<h2>Firebug</h2>
+<div class="content-block">
+<ul>
+	<li>As we get more complex, the harder it can be to figure out what is going on or what we got right or wrong.</li>	
+	<li>Having a diagnostic tool to assist us in developing these behaviours would help.  That's where Firebug comes in.</li>
+	<li>Firebug is a Firefox extension that makes it easy to examine every detail of your web page</li>
+	<li>It's similar to Web Developer but with a different focus</li>
+	<li>Found at: <a href="http://www.getfirebug.com" title="Get Firebug!">getfirebug.com</a></li>
+	<li>Install it, restart Firefox and we'll walk through it together</li>
+</ul>
+</div>
+
+<h2>Firebug and jQuery</h2>
+<div class="content-block">
+<ul>
+	<li>How can Firebug help us in developing out jQuery functions?</li>
+	<li>Console is the key</li>
+	<li>Using the console to acquire selectors, then pass instructions to them as if they were being acted on in the page in real time</li>
+	<li>Super-ultra-handy tool: <a href="http://www.learningjquery.com/2009/04/better-stronger-safer-jquerify-bookmarklet" title="jQuerify">jQuerify</a>.  Adds jQuery to your page with the click of a button.</li>
+</ul>
+</div>
+
+
+<h2>Show / Hide example</h2>
+<div class="content-block">
+	<ul>
+		<li>Using the <a href="https://github.com/alistaircom/showhide">ShowHide</a> Example page, we'll build some actions that will:
+			<ul>
+				<li>Hide an element</li>
+				<li>Show an element</li>
+				<li>Toggle back and forth</li>
+			</ul></li>
+	</ul>
+</div><!-- .content-block -->
+
+
+
+
+<h2>Review examples with Firebug</h2>
+<div class="content-block">
+	<ul>
+		<li>With Firebug and jQuerify installed, let's try the above examples again</li>
+		<li>Alerts</li>
+		<li>Show/Hide</li>
+		<li>Other actions</li>
+	</ul>
+</div><!-- .content-block -->
+
+<h2>More Examples</h2>
+<div class="content-block">
+<ul>
+	<li>There are hundreds of examples of functions and applications that you can do with jQuery.  Check the <a href="http://plugins.jquery.com/" title="jQuery Plugins">jQuery Plugins</a> list.</li>
+	<li>Today we can build something like the gallery we did with SSIs, except now with jQuery, like this <a href="lightbox/index.html">small gallery of Finnegan</a>, very easily.</li>
+	<li>One of the better lightbox tools is <a href="http://fancyapps.com/fancybox/">FancyBox</a>, which recently released version 2!</li>
+</ul>
+</div>
+
+
+
+
+
+		<div id="footer">
+		<a href="#top">Top of Page</a> | <a href="/">Home</a>
+		</div>
+
+	</div>
+
+	<div id="right-content">
+	<h2 class="navhead">contents</h2>
+
+	<a href="/1950/">home</a>
+	<span class="none"> | </span>
+
+
+<h2 class="navhead">lectures</h2>
+
+
+	<a href="http://www.thenet.ca/1950/week1/">01 | introduction</a>
+	<span class="none"> | </span>
+     
+
+	<a href="http://www.thenet.ca/1950/week2/">02 | tools &amp; standards</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.thenet.ca/1950/week3/">03 | HTML 5 &amp; SEO</a>
+	<span class="none"> | </span>
+
+
+	<a href="http://www.thenet.ca/1950/week4/">04 | css concepts</a>
+	<span class="none"> | </span>
+
+
+	<a href="http://www.thenet.ca/1950/week5/">05 | more css</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.thenet.ca/1950/week6/">06 | CSS and SSIs</a>
+	<span class="none"> | </span>
+
+
+	<a href="http://www.thenet.ca/1950/week7/">07 | template development</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.thenet.ca/1950/week9/">09 | methodology</a>
+	<span class="none"> | </span>
+
+	<span class="navoff">10 | jQuery / Git</span>
+	<span class="none"> | </span>
+
+<h2 class="navhead">contact</h2>
+
+
+	<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#99;&#97;&#108;&#100;&#101;&#114;&#49;&#64;&#109;&#121;&#46;&#98;&#99;&#105;&#116;&#46;&#99;&#97;">alistair calder</a>
+	<span class="none"> | </span>
+
+
+<h2 class="navhead">associated</h2>
+	<a href="http://my.bcit.ca/">my.bcit</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.bcit.ca/">bcit</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.computing.bcit.ca/">bcit: computing</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.alistair.com/">alistair.com</a>
+	<span class="none"> | </span>
+
+
+	</div>
+
+</div>
+
+</body>
+</body>
+</html>

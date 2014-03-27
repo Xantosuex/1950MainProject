@@ -1,4 +1,4 @@
-Phase 1: Definition
+﻿Phase 1: Definition
 
 Gathering Information
 -	We know what the client’s product information is.
@@ -33,7 +33,7 @@ PROJECT TEAM
 -	Sanka (sanka7752@yahoo.com)
 -	Preston Jang (prestonjang1520@gmail.com
 
-
+hi
 Schedule
 -	See project plan
 
