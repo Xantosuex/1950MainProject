@@ -1,28 +1,28 @@
 <!doctype html>
 <html>
-<!--Desmond Darveau
-	A00718693
-	03/24/2014
-	client_project.php
-	Contains project notes-->
-
-<!--#include file="inc/head.inc" -->
-<!--#set var="page_title" value="Home" -->
-
+<head>
+	<title>About - COMP1950 Site Docs</title>
+	<!--#include file="inc/head.inc" -->
+	<!--#set var="page_title" value="Home" -->
+</head>
+<body>
 <!--#include file="inc/menu.inc" -->
 
-<body>
-	<div id="container">
-		<div id="header">
-			<h1>Project Notes</h1>
-		</div>
-	<div id="content">
+	<div class='content'>
+	
+		<h1>Project Notes</h1>
 			<h2>Creative Brief</h2>
 				<h3>Project Goals</h3>
 					<ul>
-						<li>Create a repository of information for students</li>
-						<li>Should acknowledge prospective students and alumni</li>
-						<li>Should cover breaking news and be easy to maintain</li>
+						<li>Create a repository of information for students that:<br />
+							<ul>
+								<li>Is a comprehensive detail of all course material.  This should include examples and exercises for each lesson.</li> 
+								<li>Covers breaking news and be easy to maintain.</li>
+								<li>Should contain a wiki/glossary.</li>
+								<li>Acknowledges prospective students and alumni.</li>
+							</ul>
+						</li>
+						<li>The site overall should be aesthetically pleasing and should reflect the techniques, concepts and practices of COMP1950 course material.</li>
 					</ul>
 				<h3>Timeline</h3>
 					<p>Deadline for proto-site and all supporting documents is 6:30pm April 02, 2014.  A list of project team members  have already been sent to instructor.  No other preliminaries are required.</p>
@@ -33,6 +33,7 @@
 							<tr>
 								<th>Hourly Rate</th><th>Staff</th><th>Cost Per Hour</th><th>Estimated Time (hours) Required</th><th>Total Estimate Cost</th>
 							</tr>
+						</thead>
 							<tr>
 								<td>25</td><td>5</td><td>125</td><td>8</td><td>1000</td>
 							</tr>
@@ -44,62 +45,68 @@
 						<li>Henry Han<br />
 							<ul>
 								<li>Site Code Architecture</li>
-								<li>JQuery, CSS, HTML</li>
+								<li>Proto-site JQuery, CSS, HTML</li>
 							</ul>
+						</li>
 						<li>Desmond Darveau<br />
 							<ul>
-								<li>Project planning</li>
-								<li>Documentation</li>
-								<li>Budgeting</li>
+								<li>Project Documentation</li>
+								<li>Project Documentation pages JQuery, CSS, HTML</li>
+
+								<li>Budgeting & Project planning</li>
 							</ul>
+						</li>
 						<li>Cindy Lee<br />
 									<ul>
 										<li>Layout Planning</li>
 										<li>Wireframes</li>
 										<li>Color Schemes</li>
+										<li>Banner Creation</li>
 									</ul>
+						</li>
 						<li>Sanka<br />
 							<ul>
 								<li>Site Navigation</li>
-								<li>JQuery, CSS, HTML</li>
+								<li>Proto-site JQuery, CSS, HTML</li>
 							</ul>
+						</li>
 						<li>Preston Jang<br />
 							<ul>
 								<li>Client Contact</li>
-								<li>BLOG Implementation</li>
+								<li>BLOG Implementation JQuery, CSS, HTML</li>
 							</ul>
+						</li>
 					</ul>
 
 		<h2>Site Development</h2>
 			<h3>Site Map</h3>
+				<p>The below image shows the overall structure of the site.  It is important to note that examples and exercises will be included in the lesson pages.</p>
+				<div class="gallery">
+					<a href="images/site_map1.0.jpg" title="Layout for small screen sizes."><img src="images/site_map1.0_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
+				</div>
 			<h3>Wire Frames</h3>
 			<p>The below gallery shows the planend layout of the proto-site.  Colour and other style elements will be added later.</p>
 				<div class="gallery">	
-					<a href="images/wireframes1.0.jpg" title="Layout for small screen sizes."><img src="images/wireframes1.0_t.jpg" width="232" height="300" alt="Proto-site Wireframe"></a>
-					<a href="images/wireframes1.1.jpg" title="Menus for small screen sizes."><img src="images/wireframes1.1_t.jpg" width="232" height="300" alt="Proto-site Wireframe"></a>
-					<a href="images/wireframes1.2.jpg" title="Layout for medium and large screen sizes."><img src="images/wireframes1.2_t.jpg" width="232" height="300" alt="Proto-site Wireframe"></a>
-					<a href="images/wireframes1.3.jpg" title="Layout for blog page."><img src="images/wireframes1.3_t.jpg" width="232" height="300" alt="Proto-site Wireframe"></a>
+					<a href="images/wireframes1.0.jpg" title="Layout for small screen sizes."><img src="images/wireframes1.0_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
+					<a href="images/wireframes1.1.jpg" title="Menus for small screen sizes."><img src="images/wireframes1.1_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
+					<a href="images/wireframes1.2.jpg" title="Layout for medium and large screen sizes."><img src="images/wireframes1.2_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
+					<a href="images/wireframes1.3.jpg" title="Layout for blog page."><img src="images/wireframes1.3_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
 				</div>	
 
 		<h2>Site Design</h2>
 			<p>The below gallery shows proto-site style.  This includes colour schemes and fonts.</p>
 			<div class="gallery">	
-				<a href="images/style_guide1.0.jpg" title="Overall colour shceme and font declarations"><img src="images/style_guide1.0_t.jpg" width="232" height="300" alt="Proto-site Wireframe"></a>
-				<a href="images/style_guide1.1.jpg" title="Menu colour scheme and fonts."><img src="images/style_guide1.1_t.jpg" width="232" height="300" alt="Proto-site Wireframe"></a>
+				<a href="images/style_guide1.0.jpg" title="Overall colour shceme and font declarations"><img src="images/style_guide1.0_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
+				<a href="images/style_guide1.1.jpg" title="Menu colour scheme and fonts."><img src="images/style_guide1.1_t.jpg" width="232" height="300" alt="Proto-site Wireframe" /></a>
 			</div>				
 
-		<h2>Production & Testing</h2>
+		<h2>Production and Testing</h2>
 		<h2>Launch</h2>
 
 
-	</div><!--End content -->
-	</div><!--End container -->
- 
-		<div id="footer">
-			<p>Copyright &copy; 2014</p>
-			<p><a href='http://validator.w3.org/check?uri=referer'>Validate Page</a></p>
-		</div><!--End footer -->
-	</div><!--End container -->
+	</div><!--End content-->
 </body>
-<!--#include file="inc/foot.inc" -->
+<footer>
+	<!--#include file="inc/foot.inc" -->
+</footer>
 </html>

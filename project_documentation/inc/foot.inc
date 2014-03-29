@@ -5,5 +5,3 @@
 		<p>Page was last modified on <!--#echo var='LAST_MODIFIED'--></p>
 		<p><a href='http://validator.w3.org/check?uri=referer'>Validate Page</a></p>
 	</div><!--End footer-->
-</div><!--End container-->
-</body>

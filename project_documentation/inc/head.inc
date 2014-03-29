@@ -1,5 +1,4 @@
-<head>
-	<title><!--#echo var="page_title" -->COMP1950 Site Docs</title>
+
 	<meta charset="utf-8" />
 	<link href="./css/style.css" type="text/css" rel="stylesheet" title="Default" />
 	<link href="./css/light_box.css" type="text/css" rel="stylesheet" title="Default" />
@@ -12,5 +11,7 @@
 		$('.gallery a').lightBox();
 	});
 	</script>
-</head>
-<body>
+	<div id='header'>
+		<h1>IT Sensations Final Project</h1>
+	</div>
+
