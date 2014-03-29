@@ -1,0 +1,37 @@
+<!doctype html>
+<!--Desmond Darveau
+	A00718693
+	03/25/2014
+	index.shtml
+	Protosite Docs - Index.-->
+
+<!--#include file="./inc/head.inc" -->
+<!--#set var="page_title" value="Home" -->
+
+<!--#include file="./inc/menu.inc" -->
+	<div class='content'>
+		<h1>IT Sensations Home</h1>
+			<h2>Introdiction to the Protosite</h2>
+				<p>This project is a COMP1950 website redesign.  Though there are some good features of the existing site, it is failing in its primary focus: To present information to students in a way that facilitates learning.  The way that lessons are organized (chronologically) is good, but it is lacking in additional material, such as code repositories, examples and exercises.</p>
+		
+				<p>Though the core audience is existing students, it would be nice to acknowledge prospective students and alumni.  The new site should better help keep students up-to-date on breaking news and it should be easy to maintain.  The new site should also look nice and use modern web design techniques taught in the class its’ self.</p>
+
+			<h2>Project Goals</h2>
+				<ul>
+					<li>Create a repository of information for students</li>
+					<li>Should acknowledge prospective students and alumni</li>
+					<li>Should cover breaking news and be easy to maintain</li>
+				</ul>
+			<h2>The Team</h2>
+				<ul>
+					<li>Henry Han (xantosuex@hotmail.com) GITHUB: Xantosuex</li>
+					<li>Desmond Darveau (ddarveau@my.bcit.ca)</li>
+					<li>Cindy Lee (s.cindy.lee@gmail.com)</li>
+					<li>Sanka (sanka7752@yahoo.com)</li>
+					<li>Preston Jang (prestonjang1520@gmail.com)</li>
+				</ul>
+
+			<p>If you know IT Sensations, you know the leaders in COMP1950 proto-site development.  Look no further for the answer to all your course website design needs.</p>
+	</div><!--End content-->
+<!--#include file="inc/foot.inc" -->
+</html>
