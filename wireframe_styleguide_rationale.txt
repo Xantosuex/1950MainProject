@@ -1,0 +1,11 @@
+Wireframe & Style_Guide Rationale
+
+Wireframe Rationale
+Increasing the navigational abilities of the site was a major point we wanted to address in the site. Top-tier links include the following: Home, Blog, Lessons, Resources, & a Student Forum. There are various Home links interspersed throughout the site to increase accessibility back to the index page. The Blog link serves as a page that will be consistently updated with site news and announcements. Lessons which contain the vast majority of course content on the site. Resources for more reference material. And lastly, a student forum was included as we saw the lack of interaction between peers and classmates, as a wasted opportunity.
+We limited the number of first-tier links on the site as we thought this would be more difficult for users browsing on a smaller screen size(ie: mobile). Class lessons 1-10 were stored underneath “lessons” while external resource links and code repo were stored underneath “Resources”. Once on the lecture page itself, we added a quick nav feature so users could quickly jump down the page to different topics and prevent copious amounts of scrolling.
+
+
+Style Guide Rationale
+When considering the aesthetic design of our site, it was important for us, that the site be visually recognizable as part of BCIT. BCIT’s <a href="http://www.bcit.ca/files/pdf/bcit_gsm1.pdf">Graphic Standards Manual</a> and its current homepage design were referenced materials we consulted when planning the site out. 
+Out of all of BCIT’s major areas of studies, the School of Computing and Information technology was the category we found to be most suitable to place COMP 1950 course under. From there we drew the department color as the major component in our color scheme. Secondary complimentary colors were chosen to accent and give some interest to the site.
+The major typeface utilized in the proto-site is Roboto, an open type family designed for high resolution viewing on digital screens.  It  is a large typeface family with many different weights and styles to choose from (including Roboto Condensed and Roboto Slab) allowing for a flexible range of applications whilst still maintaining cohesive unity.
