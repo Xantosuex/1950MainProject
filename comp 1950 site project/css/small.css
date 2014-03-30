@@ -79,7 +79,7 @@
 	#navigation{
 		position: fixed;			
 		padding-top:1px;  
-		height: auto;
+		height: 54px;
 		width: 100%;
 		background-color: white;
 		float: left;
@@ -87,9 +87,10 @@
 	#banner h1{
 		display: none;
 	}
+	
 	#navigation img{
 		width: 32%;
-		border-right: 1% solid white;
+		height: 49px;
 	}
 	#navigation a{
 		background-color: #222222;
@@ -123,7 +124,7 @@
 		width: 60%;
 		height: 100%;
 		background-color: #DDDDDD;
-		top: 56px;
+		top: 55px;
 		left: 0;
 	}
 	.content-block{
