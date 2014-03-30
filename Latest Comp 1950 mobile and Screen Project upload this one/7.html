@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>
+         comp 1950 | week 7: SSIs continued 
+      </title>
+     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/loader.css" media="screen">
+<link rel="stylesheet" type="text/css" href="http://www.thenet.ca/1950/css/print.css" media="print">
+   </head>
+   <body id="body">
+      <a id="top" name="top"></a> 
+      <div id="banner">
+         <h1>
+            Intermediate Web Design &amp; Development
+         </h1>
+      </div>
+      <div id="titlebar">
+         comp 1950 &gt; week 7: Template Development 
+      </div>
+      <div id="docbox">
+         <div id="main-content">
+            <h2>
+               agenda
+            </h2>
+            <div class="content-block">
+               <ul>
+				<li>Midterm</li>
+				<li>From last week:<ul>
+						<li>Server Side Includes: Gallery</li></ul></li>
+				<li>Content Management</li>
+				<li>Template Development</li>
+			</ul>
+
+            </div>
+						
+<h2>Midterm</h2>
+
+<div class="content-block notice">
+
+<p>This week's midterm should take you under 30 mins. I will write the finish time on the whiteboard. If you finish early, drop off the exam and then you may leave if you like. You MUST be back by the stated time, however.</p>
+</div>
+
+<h2>Fun with SSIs</h2>
+<div class="content-block">
+<p>There is more that can be done with SSIs beyond basic includes and the QUERY_STRING. Let's look at a couple more examples.</p>
+<h3>ECHO</h3>
+<ul>
+	<li>This is one of the most common actions within an SSI</li>
+	<li>It does what it says: Echoes back a variable or set of variables</li>
+	<li>There are a number of built in functions that allow you to accomplish quite a bit:<ul>
+		<li>DATE_GMT: Echo the GMT time/date</li>
+		<li>DATE_LOCAL: Echo the date of the local system (might not be YOUR local date)</li>
+		<li>DOCUMENT_NAME: The file name of the current document</li>
+		<li>DOCUMENT_URI: Virtual path of the current document</li>
+		<li>LAST_MODIFIED: The last time this current doc was modified</li>
+		<li>HTTP_REFERRER: Where the initial request for this current page came from</li>
+		<li>QUERY_STRING: The information located after the ? in a URL</li>
+		<li>HTTP_USER_AGENT: What browser the user is using</li>
+		<li>REMOTE_ADDR: IP address of the current visitor</li></ul></li>
+	<li>These can be combined with the ECHO command to produce the results above</li>
+	<li>An example: &lt;!--#echo var=&quot;VARIABLE&quot; --&gt;</li>
+</ul>
+
+<h3>Formatting</h3>
+<ul>
+	<li>Showing the raw date isn't always the attractive option</li>
+	<li>Formatting the date to show in a configurable manner is required</li>
+	<li>This is done through the <code>config timefmt</code> command</li>
+	<li>Example: &lt;!--#config timefmt=&quot;%m/%d/%y&quot; --&gt;</li>
+	<li>Lots of examples on how to <a href="http://www.zytrax.com/tech/web/ssi.htm#time">configure time and date with SSIs</a></li>
+</ul>
+
+<h3>More uses for SSIs</h3>
+<ul>
+	<li>One popular method for using SSIs is to establish the request IP and check to see if it is among a list of banned addresses</li>
+	<li>Indicating how old a file is can keep your content managers on top of their content!</li>
+	<li>Using QUERY_STRING quite a bit, especially in concert with scripts (PHP, Python, Perl, etc)</li>
+</ul>
+
+</div>
+
+
+<h2>Template Development - Introduction</h2>
+<div class="content-block">
+		
+	<ul>
+	<li>Most common type of work done today: customizing templates or writing them from scratch</li>
+	<li>All levels: 
+			<ul>
+					<li><strong>Server side admins</strong> enable applications</li>
+					<li><strong>Programmers</strong> connect logic and data to front end code</li>
+					<li><strong>Client side scripters</strong> work with provided content for element manipulation</li>
+					<li><strong>Client side coders</strong> create the HTML and CSS to present the information</li>
+			</ul></li>
+	
+	<li>Many different languages and tools for developing templates</li>
+	<li>One common principle: inserting content into HTML</li>
+	<li><em>Exactly</em> like SSI exercises from last week</li>
+	<li>The primary (and nearly overwhelming use) of any template is for any type of <strong>Content Management System</strong> (CMS)</li>
+	<li>The simplest and most well known: a Blog</li>
+	</ul>
+	
+</div>
+
+
+
+<h2>A Basic CMS</h2>
+<div class="content-block">
+
+<p>A &quot;Blog&quot; is short for &quot;Web Log&quot;.  It is generally a web page or pages dedicated to the posting of information by a user.</p>
+<p>Early Blogs were written as personal journals online, and many of them were hand-coded and uploaded each time content was changed.</p>
+<p>Today,  most of these tools have gone beyond personal blogging and squarely into Content Management Systems (CMS). Some of the crossover tools include:<ul>
+<li><a href="http://www.blogger.com">Blogger</a></li>
+<li><a href="http://www.tumblr.com">Tumblr</a></li>
+<li><a href="http://www.sixapart.com/movabletype/">Movable Type</a></li>
+<li><a href="http://www.squarespace.com">Squarespace</a></li>
+<li><a href="http://wordpress.org/">Word Press</a></li>
+<li><a href="http://www.drupal.org/">Drupal</a></li>
+</ul></p>
+
+<p>Content Management Systems have emerged as one of the leading technologies influencing the web today.  What started as individual users posting personal messages have now moved to corporations posting news and event information on their site with Blog-like functionality.</p>
+
+<h3>How do they work?</h3>
+<ul>
+<li>At their simplest, any CMS architecture will take content provided by the user (Generally a title and some content) and push it to a web space.</li>
+	<li>Using templates, CMS software will take the content entered by the user, and insert it into the HTML where there are tags responsible for certain bits of information such as date, author, title, content, product name, cost, image and many other possibilities.</li>
+	<li>For example, the title of a page using <strong>Tumblr</strong> can be inserted using the following tag: {Title}</li>
+	<li>The {Title} tag is a proprietary syntax that tells the CMS on the backend to go find the title and insert it in the HTML</li>
+	<li>The title is a monatomic tag (meaning there is only an &quot;opening&quot; and not a closing tag to go with it}, as it simply represents a <em>variable</em> that the CMS will keep track of.</li>
+	<li>Other tags work like HTML, enclosing information, such as: </li>
+		<code>
+			{block:Description}<br />
+		      &nbsp;&nbsp;&nbsp;      &lt;p id="description"&gt;{Description}&lt;/p&gt;<br />
+		    {/block:Description}<br />
+		</code>	</li>
+
+	<li>You can see that there is the CMS-specific <strong>{block}</strong> tag with an attribute of <strong>Description</strong>. That indicates that the content inside the tag will be related to the description as entered by the author.</li>
+	<li>Also notable is the inclusion of regular HTML inside the Tumblr tags - exactly like our SSI exercises.</li>
+	<li>Once your template has been created, the CMS application will scan your template for tags that indicate where data should be inserted.</li>
+	<li>The application will then insert all of the relevant data and publish to completed HTML page to the specified server.</li>
+	<li>The process works exactly like Server Side Includes, but the result resides on the web server (instead of in a browser window).  This is an advantage, as further server processing can be done when a page is actually requested by a user.</li>
+</ul>
+<h3>What are they used for?</h3>
+<p>Beginning as simple online journals, blogs are being used more and more for knowledge sharing and building.</p>
+<p>Many News sites have moved to CMS systems, allowing stories to be published, with follow-ups linked to the original story, as well as categorization used to link to similar stories.</p>
+<p>CMS platforms are increasingly being used as educational tools, letting instructors post notes to students, and allowing students to have a running narrative of events and knowledge that they are building</p>
+</div>
+
+<h2>Exercise</h2>
+<div class="content-block">
+<p>Everyone will create a Template using Tumblr as our Content Management System.</p>
+<p>This will be a fairly active follow-along lab</p>
+</div>
+
+
+            <div id="footer">
+               <a href="#top">Top of Page</a> | <a href="/">Home</a>
+            </div>
+         </div>
+         <div id="right-content">
+            <h2 class="navhead">contents</h2>
+
+	<a href="/1950/">home</a>
+	<span class="none"> | </span>
+
+
+<h2 class="navhead">LESSONS</h2>
+
+
+	<a href="1.html">01 | introduction</a>
+	<span class="none"> | </span>
+     
+
+	<a href="2.html">02 | tools &amp; standards</a>
+	<span class="none"> | </span>
+
+	<a href="3.html">03 | HTML 5 &amp; SEO</a>
+	<span class="none"> | </span>
+
+
+	<a href="4.html">04 | css concepts</a>
+	<span class="none"> | </span>
+
+
+	<a href="5.html">05 | more css</a>
+	<span class="none"> | </span>
+
+	<a href="6.html">06 | CSS and SSIs</a>
+	<span class="none"> | </span>
+
+
+	<a href="7.html">07 | template development</a>
+	<span class="none"> | </span>
+
+	<a href="9.html">09 | methodology</a>
+	<span class="none"> | </span>
+
+	<a href="10.html">10 | jQuery / Git</a>
+	<span class="none"> | </span>
+<h2 class="navhead">contact</h2>
+
+
+	<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#99;&#97;&#108;&#100;&#101;&#114;&#49;&#64;&#109;&#121;&#46;&#98;&#99;&#105;&#116;&#46;&#99;&#97;">alistair calder</a>
+	<span class="none"> | </span>
+
+
+<h2 class="navhead">associated</h2>
+	<a href="http://my.bcit.ca/">my.bcit</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.bcit.ca/">bcit</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.computing.bcit.ca/">bcit: computing</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.alistair.com/">alistair.com</a>
+	<span class="none"> | </span>
+
+
+         </div>
+      </div>
+   </body>
+</html>

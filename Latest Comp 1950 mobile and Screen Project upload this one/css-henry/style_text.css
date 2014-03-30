@@ -1,0 +1,198 @@
+body {
+	background: #fff;
+	font-size: 12px;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+a {
+	color: #555;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+#banner {
+	margin: 0;
+	padding: 53px 35px 17px 68px;
+	background: url(../images/background_top1.jpg) no-repeat #507800;
+}
+
+#banner h1 {
+	font: 12px verdana, arial, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #eee;
+}
+
+#titlebar {
+	border-top: 1px solid #ddd;
+	background: #030;
+	padding: 5px 20px 5px 10px;
+	font: bold 10px verdana, arial, helvetica, sans-serif;
+	color: #fff;
+}
+
+.topnone {
+	display: inline;
+	display: none;
+}
+html>body .topnone {
+	display: none;
+}
+
+#main-content {
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+}
+
+#main-content a {
+	text-decoration: none;
+	color: #e60;
+	border-bottom: 1px dotted #666;
+}
+
+#main-content a:hover {
+	text-decoration: none;
+	color: #f82;
+	border-bottom: 1px dotted #666;
+}
+
+#main-content p {
+	margin: 10px 0px;
+}
+
+#main-content strong {
+	font-weight: bold;
+}
+
+.content-block {
+	border: 1px dashed #bbb;
+	padding: 5px 18px;
+	background: #f0f0f0;
+}
+
+#main-content h1 {
+	margin: 15px 0px 3px 0px;
+	padding: 6px 18px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f0f0f0;
+	border: 1px solid #046;
+	background: url(../images/background_head.jpg) no-repeat #70a011;
+}
+
+code {
+	font: 12px "Courier New", Courier, monospace;
+	color: #06a;
+	background-color: transparent;
+}
+
+h2 {
+	margin: 15px 0px 3px 0px;
+	padding: 3px 18px;
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #ddd;
+	background: url(../images/arrow.gif) no-repeat #ddd;
+}
+
+h3 {
+	font: bold 1.2em Georgia, "Times New Roman", Serif;
+	color: #333;
+}
+
+dt {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #333;
+}
+
+
+#footer {
+	margin: 15px 0px 3px 0px;
+	padding: 5px 18px;
+	font-size: 10px;
+	color: #333;
+	border: 1px dashed #888;
+	background: #d6e4bb;
+}
+
+ul {
+	margin: 0px 0px 8px 0px;
+	padding: 0px 0px 0px 35px;
+}
+
+#right-content h2.navhead {
+	margin: 0;
+	padding: 2px 5px 2px 20px;
+	font-size: 12px;
+	color: #eee;
+	background: #666;
+	border-bottom: 1px solid #fff;
+}
+
+#right-content p {
+	margin: 0;
+	padding: 8px 5px 8px 20px;
+	font-size: 10px;
+	border-bottom: 1px solid #fff;
+	background: url(../images/arrow.gif) no-repeat #fd6;
+}
+
+#right-content a {
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	color: #e60;
+	background: #ddd;
+	display: block;
+	margin: 0;
+	padding: 3px 20px;
+	font-weight: bold;
+	font-size: 10px;
+	width: 210px;
+	width: 170px;
+}
+html>body #right-content a {
+	width: 170px;
+}
+#right-content a:hover {
+	text-decoration: none;
+	color: #444;
+	background: #ccc;
+
+}
+
+.navoff {
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	color: #444;
+	background: url(../images/b_arrow.gif) no-repeat #ccc;
+	display: block;
+	margin: 0;
+	padding: 3px 20px;
+	font-weight: bold;
+	font-size: 10px;
+	width: 210px;
+	width: 170px;
+}
+
+.greyout {
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	color: #aaa;
+	background: #ddd;
+	display: block;
+	margin: 0;
+	padding: 3px 20px;
+	font-weight: bold;
+	font-size: 10px;
+	width: 210px;
+	width: 170px;
+}
+
+.intro {
+	margin-top: 10px;
+	border: 1px solid #046;
+	padding: 5px 18px;
+	background: #e4eef6;
+}

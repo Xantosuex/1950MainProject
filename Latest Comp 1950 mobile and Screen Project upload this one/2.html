@@ -1,0 +1,1074 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         comp 1950 | week 2: tools &amp; xhtml
+      </title>
+     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/loader.css" media="screen">
+<link rel="stylesheet" type="text/css" href="http://www.thenet.ca/1950/css/print.css" media="print">
+   </head>
+   <body id="body">
+      <a id="top" name="top"></a> 
+      <div id="banner">
+         <h1>
+            Intermediate Web Design &amp; Development
+         </h1>
+      </div>
+      <div id="titlebar">
+         comp 1950 &gt; week 2: tools &amp; xhtml
+      </div>
+      <div id="docbox">
+         <div id="main-content">
+            <h2>
+               agenda
+            </h2>
+            <div class="content-block">
+               <ul>
+                  <li>
+                     Web review: some reminders
+                  </li>
+                  <li>
+                     Web Development with Firefox, Chrome and Safari
+                  </li>
+                  <li>
+                     Standards &amp; Semantics
+				  </li>
+				  <li>
+				  	Markup Languages
+				  </li>
+				  <li>
+				  	Assignment &amp; Homework
+				  </li>
+ 
+               </ul>
+
+            </div>
+            <h2>
+               web review: reminders
+            </h2>
+            <div class="content-block">
+               There are a few things that bear reminding: 
+               <ul>
+                  <li>
+                     file and folder names <strong>cannot</strong> contain: 
+                     <ul>
+                        <li>
+                           capital letters
+                        </li>
+                        <li>
+                           spaces
+                        </li>
+                        <li>
+                           special characters: ! @ # $ % ^ &amp; * ( ) + { } [
+                           ] : ; &quot; &lt; &gt; ? |
+                        </li>
+												<li>
+													acceptable non-alphanumeric characters: .  _  -  ~
+												</li>
+                     </ul>
+                  </li>
+                  <li>
+                     default page: index.htm, index.html or index.shtml (or
+                     whatever your server default is)
+                  </li>
+               </ul>
+            </div>
+			
+<h2>Browser Tools</h2>
+
+
+<div class="content-block"> 
+
+<h3>Lots of options</h3>
+<ul>
+	<li>These days there are lots of browser-based tools available for web developers</li>
+	<li>Webkit (<a href="www.google.com/chrome">Chrome</a>, <a href="http://www.apple.com/safari/">Safari</a>) and Mozilla (<a href="http://www.mozilla.org/en-US/firefox">Firefox</a>) both have built-in tools</li>
+	<li>Tools are enhanced by their organizations</li>
+	<li>Easy to develop and troubleshoot now</li>
+	<li>We will look at <a href="www.google.com/chrome">Chrome</a> and <a href="http://www.apple.com/safari/">Safari</a> but, in COMP 1950, the focus will be <a href="http://www.mozilla.org/en-US/firefox">Firefox</a></li>
+</ul>
+
+
+<h3>Why Use Firefox?</h3>
+<ul>
+	<li>Open source and user supported</li>
+	<li>Extremely standards compliant </li>
+	<li>Designed by web developers</li>
+	<li>Uses the superb Gecko page-rendering engine</li>
+	<li>Current version very solid (with minimal extensions)</li>
+	<li>Built in tools are excellent</li>
+	<li>Works for large or small-scale development</li>
+	<li>Excellent selection of extensions</li>
+</ul>
+ 
+<h3>Challenges</h3>
+<ul>
+	<li>Open source and user supported</li>
+	<li>User contributable code and suggestions</li>
+	<li>Can become heavy under it&apos;s own weight: extensions &amp; add-ons</li>
+</ul>
+ 
+<h3>Considerations</h3>
+<ul>
+	<li>Remember that there are other browsers out there!</li>
+	<li>Test in Moz/IE/Opera/FF and anything else just to be sure</li>
+</ul>
+
+</div>
+
+
+<h2>Built-in tools</h2>
+<div class="content-block">
+<p>Starting with the built-in web developer tools:</p>
+<ul>
+	<li>Firefox Developer Toolbar</li>
+	<li>Includes console, debugger, inspector</li>
+	<li>Also includes multiple view options, ability to include style and even full size screenshots</li>
+	<li>Responsive Design view</li>
+	<li>Scratchpad for JavaScript stuff</li>
+	<li>Separate style editor</li>
+</ul>
+<p>Some pretty great stuff, but there are other tools out there that offer far more!
+</div>
+
+<h2>Extensions</h2>
+<div class="content-block"> 
+
+<p>Extensions are a big part of Firefox:<br />
+<a href="https://addons.mozilla.org/extensions/?application=firefox">
+https://addons.mozilla.org/extensions/?application=firefox
+</a></p>
+
+<p>
+There are many to choose from, with an entire category dedicated to <a href="https://addons.mozilla.org/en-US/firefox/browse/type:1/cat:4">Web and Developer Tools</a> 
+</p>
+
+<p>
+The best tool for Web Developers is the <a href="https://addons.mozilla.org/extensions/moreinfo.php?application=firefox&category=Developer%20Tools&numpg=10&id=60">
+Web Developer toolbar
+</a>
+</p>
+
+<p>The author, Chris Pedrick, maintains a <a href="http://chrispederick.com/work/webdeveloper/">
+site for the Web Developer extension
+</a>.
+
+</p>
+<p>Some of the amazing tools this has to offer web developers:
+<ul>
+	<li>Disable styles - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+	<li>Edit CSS &amp; HTML - Make live changes to your CSS or HTML!</li>
+	<li>Images - outlining, file sizes, alt information... lots more</li>
+	<li>Form detail - useful for working with form elements</li>
+	<li>Built in validators</li>
+	<li>Line Guides &amp; Rulers</li>
+</ul>
+</p>
+</div>
+
+ 
+  
+ 
+
+			
+			
+<h2>Firebug</h2>
+<div class="content-block">
+<ul>
+
+	<li>As we get more complex, the harder it can be to figure out what is going on or what we got right or wrong.</li>	
+	<li>Having a diagnostic tool to assist us in developing these behaviours would help.  That's where Firebug comes in.</li>
+	<li>Firebug is a Firefox extension that makes it easy to examine every detail of your web page</li>
+	<li>It's similar to Web Developer but with a different focus</li>
+	<li>Found at: <a href="http://www.getfirebug.com" title="Get Firebug!">getfirebug.com</a></li>
+	<li>Install it, restart Firefox and we'll walk through it together</li>
+
+</ul>
+</div>
+
+
+
+
+
+<h2>Wrap up</h2>
+	<div class="content-block">
+		<ul>
+			<li>Firefox was the first browser to have real tools embedded and, with extensions, it's a real powerhouse now</li>
+			<li>The last few years have seen a constant progression of improved tools in other browsers, bringing everything up a significant notch</li>
+			<li>Not a bad idea to have a &quot;dev browser&quot; that can be weighted down with tools</li>
+		</ul>
+	
+	</div>
+		
+	<h2>Your Dev Tools?</h2>
+		<div class="content-block">
+			<ul>
+				<li>So, what do you use?</li>
+				<li>CSS, HTML, Colours, Layouts, etc</li>
+				<li>I posted a tool list in myBCIT from this term, but some tools from past terms:</li>
+			</ul>
+	<ul>
+		<li><a href="http://www.panic.com/coda/">Coda</a> - Web Dev IDE (Mac)</li>
+		<li><a href="http://www.sublimetext.com/2">Sublime Text 2</a> - Text Editor (Mac/Win)</li>
+		<li><a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a> - Web Dev IDE (Mac/Win)</li>
+		<li><a href="http://cyberduck.ch/">Cyberduck FTP</a> - FTP tool (Mac)</li>
+		<li><a href="http://www.ficml.org/jemimap/style/color/wheel.html">Color Wheel</a> - Colour Selector</li>
+		<li><a href="http://notepad-plus-plus.org/">Notepad++</a> - Text Editor (Win)</li>
+		<li><a href="http://filezilla-project.org">Filezilla</a> - FTP tool (Win)</li>
+		<li><a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> - Text Editor (Mac)</li>
+		<li><a href="http://www.htmlkit.com/">HTMLKit</a> - Web Dev IDE (Win)</li>
+		<li><a href="http://www.aptana.com/">Aptana</a> - Web Dev IDE (Win/Mac)</li>
+		<li><a href="http://expression.microsoft.com/en-us/dd565874.aspx">Expression SuperPreview</a> - Browser Previewer</li>
+		<li><a href="http://www.textasticapp.com/">Textastic</a> - Web Dev IDE (iPad)</li>
+		<li><a href="http://dropbox.com">Dropbox</a> - File Sharing (Web)</li>
+		<li><a href="http://www.activestate.com/komodo-edit">Komodo</a> - Web Dev IDE (Mac/Win)</li>
+
+	</ul>
+		</div>
+		
+		<h2>Final Word...</h2>
+			<div class="content-block">
+				<ul>
+					<li>Make SURE you know how to troubleshoot a page!</li>
+					<li>Not only for the quizzes that will come up, but IRL too!</li>
+				</ul>
+
+			</div>
+
+		
+
+			
+			
+<h2>standards</h2>
+
+<div class="content-block"> 
+
+<h3>What are standards?</h3>
+<ul>
+	<li>Definition of standards?</li>
+	<li>What are some examples of standards in real life?
+<ul>
+	<li>	Lightbulbs</li>
+	<li>	Grades of gasoline</li>
+	<li>	Train rail widths</li>
+	<li>	TV Broadcast signals</li>
+</ul></li>
+</ul>
+ 
+<h3>Why use them?</h3>
+<ul>
+	<li>Interoperability</li>
+	<li>Predictable results/dimensions/values</li>
+	<li>A new specification is not needed for each new manufacturing run</li>
+	<li>Need a new microwave? You can count on:
+		<ul>
+		<li>Plug/Voltage/Power</li>
+		<li>Unit size</li>
+		<li>Operation</li>
+</ul></li>
+</ul>
+
+<h3>Standard support - not always</h3>
+<ul>
+	<li>Older units don't support standards</li>
+	<li>Electrical units </li>
+	<li>Televisions</li>
+	<li>Cars</li>
+</ul>
+ 
+<h3>Try to Renovate an old house!</h3>
+<ul>
+	<li>Many non-standard things</li>
+	<li>Electrical panels, </li>
+	<li>Phone jacks, </li>
+	<li>Boilers, </li>
+	<li>Door/window sizes</li>
+	<li>Stairs</li>
+</ul>
+ 
+<h3>Non-Standard: What does that equal?</h3>  
+<ul>
+	<li>Costly and lengthy upgrades that can threaten the house itself.  </li>
+	<li>Foundational changes</li>
+	<li>Rewiring, replumbing, removing walls, floors, etc.</li>
+</ul>
+ 
+<h3>Web Standards</h3>
+<p>When you build without standards, you are investing in the here and now, without thinking of tomorrow.</p>
+
+<ul>
+	<li>Code is hard to support</li>
+	<li>Future developers may be confused</li>
+	<li>Re-engineering websites can be very difficult, costly and time consuming</li>
+	<li><strong><em>Most important</em></strong> Content is fused to your markup!</li>
+</ul>
+</div>
+
+ 
+<h2>Standards: Web and IRL</h2>
+
+<div class="content-block">
+
+<ul>
+<li><strong>ISO</strong>: International Organization for Standards ( <a href="http://www.iso.org">
+http://www.iso.org
+</a> )
+<ul>
+	<li><strong>1906</strong>: As the Intn'l Electrotechnical Commission (IEC): in order to better access pre-determined equipment that was interchangeable and interoperable</li>
+	<li><strong>1947</strong>: 25 countries got together to form ISO: &quot;to facilitate the international coordination and unification of industrial standards&quot;</li>
+	<li>Companies agree to become a part of ISO, and gain access to the complete library of standards set by the organization in concert with their many members</li>
+	<li>While it started slowly, many companies ignored standards, in favor of their own "proprietary" methods</li>
+	<li>Momentum, corporate marketing (companies advertising that their product or method conforms with ISO XXXX), and some government legislation (forcing the adoption of certain standards) led to a larger adoption of standards</li>
+	</ul></li></ul>
+	
+<h3>Web Standards - A Parallel</h3>
+
+<ul>
+	<li>Web standards are going through the same process that the ISO went through</li>
+	<li>Many companies see the benefits of interoperability - many are still &quot;forging their own&quot;</li>
+	<li>Many companies have standards: Adobe, Microsoft, Apple, Ford, GM</li>
+	<li>Many are proprietary standards, and are not supported by many companies</li>
+	<li>W3C - World Wide Web Consortium: founded by Tim Berners-Lee to try and uniformly put forward standards through a single communication vehicle</li>
+	<li>Leading browser makers did not follow, initially</li>
+	<li>Designers were 'taking sides' in the browser wars… users were losers</li>
+</ul>
+
+<h3>W3C Goals</h3>
+<ol>
+	<li><strong>Universal Access</strong>: To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents;</li>
+	<li><strong>Semantic Web</strong>: To develop a software environment that permits each user to make the best use of the resources available on the Web;</li>
+	<li><strong>Web of Trust</strong>: To guide the Web's development with careful consideration for the novel legal, commercial, and social issues raised by this technology.</li>
+</ol>
+
+<h3>Making Progress</h3>
+<ul>
+	<li>Eventually, the drive towards standards began to win out</li>
+	<li>Users made their voices known and momentum started to slowly shift toward supporting standards</li>
+	<li>Seen as a marketing opportunity: <em>Our browser supports standards!</em></li>
+	<li>Mozilla Project emerged after a large number of Netscape developers were let go upon the acquisition by AOL</li>
+	<li>Mozilla is now a standards-compliant browser with many features</li>
+	<li>Microsoft and AOL followed shortly with adoption of W3C standards (with limitations)</li>
+	<li>Large companies started joining the W3C to be seen as part of the Standards game</li>
+</ul>
+
+<h3>For Web Developers</h3>
+<p>Designing to current W3C specifications means that:</p>
+<ul>
+	<li>your pages will be viewable in the largest number of browsers, </li>
+	<li>the largest number of devices </li>
+	<li>and (if used correctly) will gracefully degrade as support for CSS or other presentation layers are absent.</li>
+</ul>
+<p>Some more words about <a href="http://www.webstandards.org/learn/faq/">Web Standards</a> worth reading</p>
+</div>
+
+<h2>Details of Standards-Driven Development</h2>
+<div class="content-block">
+<h3>Requirements</h3>
+<ul>
+	<li>XHTML + CSS + DOM = Agile Web Sites</li>
+	<li>Using XHTML Transitional or Strict to deliver valid code</li>
+	<li>Use CSS to develop sites that separate content from presentation</li>
+	<li>Getting rid of deprecated tags, complex table layouts, browser sniffing, code forking</li>
+	<li>Using Semantic Markup to establish content relationships and logical deployment of content</li>
+</ul>
+
+
+<h3>Future Compatibility</h3> 
+<ul>
+	<li>Code is easier to use for future developers</li>
+	<li>Less presentational code means easier design changes</li>
+	<li>Keep the same code for longer periods of time</li>
+	<li>Optimally, <strong>never</strong> change your code (if all presentation is gone)</li>
+</ul>
+
+<h3>Development Cost</h3>
+<ul>
+	<li>Longer development times for design changes</li>
+	<li>Complex table layouts difficult to manage</li>
+	<li>Harder to integrate with CMS (Content Management System) tools</li>
+</ul>
+
+<h3>Special Needs</h3>
+<ul>
+	<li>XHTML lends itself to assistive readers (low vision, etc)</li>
+	<li>Can support multiple stylesheets for different user needs</li>
+	<li>Try surfing with your monitor off (at home)!  IBM's <a href="http://www-306.ibm.com/able/solution_offerings/hpr.html">Home Page Reader</a>
+</ul>
+
+
+<h3>Single Codebase</h3>
+<ul>
+	<li>No complex sniffing scripts</li>
+	<li>Avoid having to support multiple browsers with multiple home/site pages (code forking)</li>
+	<li>Much less upkeep (only one source to update)</li>
+</ul>
+
+
+
+<h3>Moving Forward</h3>
+<ul>
+	<li>XHTML to HTML5 - ease the transition</li>
+	<li>Making the most of the elements you have control over</li>
+	<li>jQuery easiness! The better your elements, classes and IDs, the easier it will be to access</li>
+</ul>
+</div>
+
+
+
+<h2>Standards Resources</h2>
+<div class="content-block">
+<ul>
+	<li>WASP <a href="http://www.webstandards.org/">http://www.webstandards.org/</a></li>
+	<li>W3C <a href="http://www.w3c.org">http://www.w3c.org</a></li>
+	<li>W3C Sites <a href="http://www.w3csites.com/">http://www.w3csites.com/</a></li>
+</ul>
+</div>
+
+
+<h2>Semantic Markup</h2>
+<div class="content-block">
+
+<h3>What is Semantic Markup?</h3>
+<ul>
+	<li>Practice of organizing your content into a hierarchy</li>
+	<li>Using appropriate tags for the content</li>
+	<li>H1 ... 6 tags for headings</li>
+	<li>Paragraph tags instead of double BR tags</li>
+	<li>CSS instead of FONT</li>
+	<li>Sounds straightforward, but people are stuck in presentation</li>
+	<li>Key: Separate Content (XHTML) from Presentation (CSS)</li>
+</ul>
+
+<h3>Building Content Relationships</h3>
+<ul>
+	<li>Use appropriate tags for headings, content, sub-content, lists</li>
+	<li>This builds a relationship that descends from the title of the page</li>
+	<li>Each section is a discrete piece of information</li>
+	<li>Headings are related to following paragraphs</li>
+	<li>Citations, quotes, code samples can be contextualized by nearest heading</li>
+</ul>
+
+<h3>Logical vs. Physical Styles</h3>
+<ul>
+	<li>Tend to display identically in browsers, but are fundamentally different</li>
+	<li>Physical styles define what content <em>looks like</em></li>
+	<li>Logical styles define what content <em>is</em></li>
+	<li>Important for screen readers (see IBM's Hope Page Reader above)</li>
+	<li>Some physical styles:
+	<ul>
+	<li><code>b</code> - Bold</li>
+	<li><code>i</code> - Italic</li>
+	<li><code>s</code> - Strikethrough</li>
+	<li><code>u</code> - Underline</li>
+	</ul></li>
+</ul>
+
+<h3>Logical Styling</h3>
+<ul>
+	<li>Best way to markup content for long-term usage</li>
+	<li>Use CSS to change style (and some behaviour)</li>
+	<li>Use DOM to change behaviour (via scripting)</li>
+	<li>Requires thinking ahead</li>
+	<li>Examples of logical styles:
+	<ul>
+	<li><code>code</code> - <code>Code sample</code></li>
+	<li><code>kbd</code> - <kbd>Keyboard entry</kbd></li>
+	<li><code>samp</code> - <samp>Programming sample</samp></li>
+	<li><code>var</code> - <var>Variable</var></li>
+	<li><code>cite</code> - <cite>Citation</cite></li>
+	<li><code>dfn</code> - <dfn>Definition</dfn></li>
+	<li><code>abbr</code> - <abbr title="Abbreviation definition here">Abbreviation</abbr></li>
+	<li><code>acronym</code> - <acronym title="This is an acronym">Acronym</acronym></li>
+	<li><code>del</code> - <del>Deleted text</del></li>
+	<li><code>ins</code> - <ins>Inserted text</ins></li></ul></li>
+</ul>
+ 
+<h3>Key Advantages</h3>
+<ul>
+	<li>Content is relational - context can be determined easily</li>
+	<li>Extracting important pieces of information is simple (CITE or CODE tags for example)</li>
+	<li>Search engine optimization</li>
+	<li>Big win for jQuery (again)!</li>
+	<li>Screen readers</li>
+</ul>
+
+</div>
+
+
+
+
+<h2>Where did it all start?</h2>
+
+
+<div class="content-block">
+	<h3>Why the need for XHTML</h3>
+<ul>
+	<li>First: How did we get to XHTML?
+		<ul>
+			<li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+			<li>Through a flurry of iterations, HTML 1.0 moved to 4.01 fairly quickly over 5 years or so</li>
+			<li>Despite it's reputation as a loose language, HTML 4.01 can be written strict just like XHTML and HTML5 can</li>
+			<li>The problem was not with the language, nor with the authors.  It was with the <em>browsers</em>.</li>
+			<li>Browser manufacturers created User Agents that would read code, interpret it, fix any mistakes and render a page, without any visible errors.</li>
+			<li>It was this that led to coders exploiting problems in browsers and creating pages that broke when new specs or updated UAs came out</li>
+		</ul></li>
+	<li>Okay, so now there is a problem. Millions of pages are being produced with sloppy code because the UAs let it happen</li>
+	<li>The web is becoming filled with Tag Soup that makes it hard to index, with search tools having to trust things like META keywords and descriptions</li>
+	<li>A better solution is required: Get Strict!</li>
+	
+</ul>
+</div>
+
+<h2>Attempting to fix the problem</h2>
+<div class="content-block">
+	<h3>Moving on from XHTML1</h3>
+<ul>
+	<li>After years of <em>HTML</em> development, 4.01 became the &quot;Last Official Release&quot;</li>
+	<li>The Web Working Group had taken a look at XML (Extensible Markup Language) and liked what they saw: a requirement for valid markup in order for an XML application to work</li>
+	<li>Why not take the ruleset from XML (lower case attributes, everything in quotes, close every tag) and apply it to HTML? Yay!</li>
+	<li>That should fix everything, right?</li>
+	<li>Coding wasn&apos;t <em>actually</em> fixed by the introduction of XHTML. Fixes were <em>suggested</em> by the specification, but most browsers would render the page anyway.</li>
+	<li>This is because 99% of XHTML pages are reporting their MIME type as: <code>text/html</code></li>
+	<li>To get pages to render using the appropriate DOCTYPE of XHTML, pages would have to be delivered with the MIME type of <code>application/xhtml+xml</code></li>
+	<li>Using that MIME type, however, brought with it a rather dire proviso:</li>
+	<li>The error handling specified in XHTML 1.1 meant <strong>all errors will cause the browser to cease rendering</strong></li>
+	<li>Yes, you read that correctly. That means <strong>any</strong> error will throw an warning to the user and the page will not be shown</li>
+	<li>Try to imagine the Web actually working in this way</li>
+	<li>Why was this done? Because the developers of XHTML wanted to force strict coding rules so that the Web could be seen as a giant application.  Reliable code on every page meant you could use the data anywhere</li>
+</ul>
+</div>
+
+	<h2>XHTML2</h2>
+	<div class="content-block">
+	<ul>
+		<li>It was that last issue and the next one that were the main tipping points for the demise of XHTML, although many of the people in the Web Working Group didn't know that yet</li>
+    <li>Between 2002 and 2006, a significant amount of development was attempted for XHTML2</li>
+    <li>An early decision was to abandon backward compatibility with XHTML1 and HTML4.x leading to significant controversy</li>
+	<li>What does that <em>mean</em>? &quot;abandon backward compatibility&quot;?
+		<ul>
+			<li>Deprecated tags would no longer work</li>
+			<li>All &quot;old&quot; code would have to be updated if you wanted to deliver XHTML</li>
+			<li>Browsers would have even more work to do when rendering pages</li>
+		</ul>
+		
+		</li>
+    <li>Some additional changes:
+    	<ul>
+    		<li>Forms will now be controlled by XForms, a new system that allows for error checking, preformatted input fields and more</li>
+    		<li>DOM events will be replaced with XML Events - a system for registering and handling events within an XML document, requiring very strict coding standards</li>
+    		<li>Lists for Navigation can be created with a new <code>n1</code> tag</li>
+    		<li>Any element can have <code>href</code> or <code>src</code> attributes, allowing for links and/or image replacement</li>
+	</ul>
+    </li>
+    <li>Some of the more contentious issues were split out into modules to be worked on by the W3C XHTML Working Group</li>
+	<li>At one point, a question was asked:
+		<ul>
+			<li>Shouldn't we be taking into account the billions of pages that are already out there, make the upgrading part easy and focus on the kinds of things people are actually doing today?</li>
+		</ul>
+		
+		</li>
+		<li>Maybe not <em>exactly</em> that, but close</li>
+		<li>A vote was called and the motion was defeated.  But the people who thought it was a good idea wanted to move forward</li>
+    <li>As a result - they created the WHATWG (Web Hypertext Application Technology Working Group) and began working on a competing specification, which was originally called Web Applications 1.0</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+<h2>XHTML - Let's review</h2>
+
+<div class="content-block"><ul>
+	<li>Evolution from HTML to XHTML</li>
+	<li>X = eXtensible</li>
+	<li>X = XML related</li>
+	<li>A reformation of HTML reformulated in XHTML.</li>
+	<li>First major update to HTML since the 4.0 specification was released in 2000.</li>
+	<li><strong>Note</strong> - XHTML Development has ceased entirely. More on that later</li>
+</ul>
+</div>
+
+
+<h2>Why XHTML? Still worthwhile?</h2>
+
+<div class="content-block"><ul>
+	<li>Better, more predictable coding patterns</li>
+	<li>&quot;verifiable&quot; or &quot;well-formed&quot; code can be produced</li>
+	<li>Forces a higher standard of HTML</li>
+	<li>Porting to HTML5 is easy (if you also observe <strong>semantic</strong> guidelines)</li>
+</ul>
+</div>
+
+<h2>What is different about XHTML?</h2>
+<div class="content-block"><ul>
+	<li>Almost identical to HTML 4.01, but a much stricter syntax in XHTML</li>
+	<li>Technically: <strong>XHTML is just HTML defined as an XML application.</strong></li>
+
+</ul>
+<h3>XHTML Rules:</h3>
+
+<ul>
+<li>All elements must be properly nested
+<ul>
+	<li>This is not valid: &lt;p&gt;&lt;b&gt;Bolded Text&lt;/p&gt;&lt;/b&gt;</li>
+	<li>This can be a problem with things like Lists &lt;ol&gt; and &lt;ul&gt;.</li>
+
+	<li>Especially when closing the List Item &lt;li&gt; tag that contains the &lt;ul&gt; or &lt;ol&gt; tag.</li>
+</ul></li>
+
+<li>All tags must close
+<ul>
+	<li>Example: &lt;p&gt;Some text here&lt;/p&gt;</li>
+
+	<li>Empty Elements are closed as well: &lt;br /&gt; or &lt;img src=”#” /&gt;</li>
+	<li>An extra space is required before the slash to work with all browsers.</li>
+</ul></li>
+
+<li>All tag names must be in lower case
+<ul>
+	<li>&lt;Img Src=”some_image.gif”&gt; is not valid</li>
+
+</ul></li>
+
+<li>Attribute names are always in lower case
+<ul>
+	<li>&lt;p ALIGN=”center”&gt; should be &lt;p align=”center”&gt;</li>
+</ul></li>
+
+<li>All attributes must be quoted
+<ul>
+	<li>&lt;body bgcolor=black&gt; will not work, you need: &lt;body bgcolor=”black”&gt;</li>
+
+</ul></li>
+
+<li>Attributes cannot be minimized
+<ul>
+	<li>&lt;input type=”checkbox” checked&gt; cannot be used. The valid code is: &lt;input type=”checkbox” checked=”checked”&gt;</li>
+</ul></li>
+
+
+<li>Name Attribute is no longer used. Replace with “id”.
+<ul>
+	<li>&lt;img src=”picture_off.gif” name=”picture_off” /&gt; will not validate. Use id=”picture_off” instead.</li>
+
+	<li>In order to work with new and older browsers, use both name and id as an interim measure (however, you will get a</li>
+	<li>warning).</li>
+</ul></li>
+
+
+<li>Mandatory Elements: Every XHTML document <strong>must have</strong> these elements: 
+<ul>
+	<li>&lt;html&gt;</li>
+
+	<li>&lt;head&gt;</li>
+	<li>&lt;title&gt;</li>
+	<li>&lt;body&gt;</li>
+	<li>The &lt;doctype&gt; declaration *must* be there, but it is <em>part</em> of the document itself rather than an element of the document.</li>
+
+</ul></li>
+
+
+<li>Documents must be well-formed
+<ul>
+	<li>The document must conform to all of the above rules</li>
+</ul></li>
+
+<li>Optional XML declaration
+<ul>
+	<li>Not <em>required</em>, but good practice:</li>
+
+	<li>&lt;?xml version=”1.0” encoding=”ISO-8859-1”?&gt;</li>
+</ul></li>
+</ul></div>
+
+<h2>XHTML Documents</h2>
+<div class="content-block"><h3>DTD: Document Type Definition</h3>
+<ul>
+	<li>A description of the document, and the legal definitions that fall within it. </li>
+	<li>The DTD defines the syntax of the page in SGML.</li>
+
+	<li>This translates to: Because XHTML is just the application of XML to
+	HTML, you need to tell the browser (the interpreter) how to interpret
+	all of the code on the page.</li>
+</ul>
+</div>
+
+<h2>Three kinds of DTD:</h2>
+<div class="content-block"><h3>Strict</h3>
+<ul>
+	<li>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</li>
+
+	<li>Mostly used for technical documents or content that requires very little markup.</li>
+	<li>This is the original intention of the W3C&quot;s recommendation.</li>
+</ul>
+
+
+<h3>Transitional (most common)</h3>
+<ul>
+	<li>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</li>
+
+	<li>This is by far the most common DTD in use today</li>
+	<li>Supports most HTML features</li>
+	<li>Was created to provide a middle ground for users trying to convert from HTML to XHTML in stages.</li>
+	<li>Will be the class standard</li>
+</ul>
+
+
+
+<h3>Frameset</h3>
+
+<ul>
+	<li>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;</li>
+	<li>Same as Transitional, but allows the use of frames</li>
+</ul>
+</div>
+
+
+<h2>Example of an XHTML Document</h2>
+<div class="content-block"><p class="code">
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;<br />
+&lt;!DOCTYPE html<br />
+PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;COMP 1950 - Intermediate Web Development and Design&lt;/title&gt;<br />
+
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;h1&gt;Welcome!&lt;/h1&gt;<br />
+&lt;p&gt;This class will begin at 6:45 each Tuesday for 12 weeks&lt;/p&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+</p>
+
+<h3>Validate your code:</h3>
+<a href="http://validator.w3.org/">http://validator.w3.org/</a>
+	</div>		
+	
+
+
+
+
+
+
+
+
+
+
+<h2>HTML5</h2>
+<div class="content-block">
+	<h3>Arising out of the morass</h3>
+<ul>
+	<li>HTML was born out of frustration with languishing XHTML2 development</li>
+	<li>The last official spec of XHTML had come in 2000 and by 2005, there was little forward movement, with the development bogged down in committees and problems reaching consensus</li>
+	<li>There were two distinct camps: Strict and Non Strict (overly simplified terms)</li>
+	<li>After a series of decisions against a more forgiving, backward compatible version, a number of HTML Working Group members created their own group: WHATWG</li>
+	<li>After 3 years, Web Applications 1.0 gained considerable momentum when Mozilla, Apple and Opera joined the Working Group and requested that it become part of the W3C's HTML Working Group </li>
+	<li>In 2007, the W3C HTML working group adopted the development, renamed it HTML5 (a successor to HTML 4.01) and released a Public Working Draft in 2008</li>
+	<li>As of today, HTML5 is a <a href="http://www.whatwg.org/specs/web-apps/current-work/">Living Standard</a>, and <a href="http://blog.whatwg.org/html-is-the-new-html5">is now just called HTML</a></li>
+
+	
+	
+</ul>
+</div>
+
+<h2>What is HTML5?</h2>
+<div class="content-block">
+	<h3>The basics of HTML5</h3>
+<ul>
+	<li>Some of the most important parts of HTML5 are:
+		<ul>
+    		<li>Backwards compatible - there will be an attempt to make the system compatible</li>
+    		<li>XML can be included as a markup language from within HTML5</li>
+    		<li>Ultra simple Doctype: &lt;!DOCTYPE html&gt;</li>
+    		<li>Ability to embed MathML or SVG elements</li>
+			<li>One of the guiding principles: Semantic Coding</li>
+		</ul>
+	</li>
+	<li>Some of these seem insignificant, but they are great strides forward</li>
+	<li>More than just adjustments to the markup, there are new elements:
+		<ul>
+    		<li><code>&lt;section&gt;</code> is a tag representing a document or application section</li>
+    		<li><code>&lt;article&gt;</code> is an independent piece of content in a document</li>
+    		<li><code>&lt;aside&gt;</code> is for content &quot;only slightly&quot; related to the content</li>
+    		<li><code>&lt;header/footer&gt;</code> these tags are for the header or footer on a page</li>
+    		<li><code>&lt;nav&gt;</code> represents an area for navigation</li>
+    		<li><code>&lt;dialog&gt;</code> allows you to mark up a conversation</li>
+    		<li><code>&lt;figure&gt;</code> allows for captioning of embedded content like a graphic or video</li>
+		</ul>	
+	</li>
+	<li>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content</li>
+	<li>There is a list of additional tags that will continue to refine what will be possible with HTML:
+		<ul>
+    		<li><code>audio, video, embed, mark, meter, progress, time, canvas, command, datagrid, details, datalist, keygen, bb, output, ruby</code></li>
+    		<li><code>&lt;input &amp; type&gt;</code> elements will also have new attributes that allow for greater Form functionality:
+    			<ul>
+    				<li><code>datetime, date, month, week, time, number, range, email, url, search, color</code></li>
+				</ul>	
+    		</li>
+    		<li>There are a huge list of additional attributes that have changed, allowing for considerable agility with web development</li>
+    		<li>There have also been a few elements removed, such as: <code>&lt;big, font, strike, &gt; and a few more</code></li>
+    		<li>There are also a large number of attributes that have been removed, such as: <code>&lt;align, background, border, height, size, type, width&gt; and more</code></li>
+		</ul>	
+	
+	</li>
+	<li>Some of the most anticipated additions are <code>&lt;canvas, audio, video&gt;</code></li>
+	<li>The <code>&lt;canvas&gt;</code> tag will allow for 2D drawing of considerable power</li>
+	<li><code>&lt;video/audio&gt;</code> will allow for direct embedding of elements in your HTML documents</li>
+	<li>There is some development in this area already</li>
+</ul>
+</div>
+
+
+<h2>HTML5 Today</h2>
+<div class="content-block">
+	<h3>Is it time to start using HTML5?</h3>
+<ul>
+	<li>Yes and No</li>
+	<li>One of the great things about HTML5 is the ability to use tags from previous MLs</li>
+	<li>Tags are therefore interpreted and rendered correctly</li>
+	<li>How about <strong>new</strong> tags? (audio, video, article, aside, etc)</li>
+	<li>These may not be rendered correctly due to older, non-compliant browsers not having an idea how to interpret them</li>
+	<li>What happens when you use an unknown element... say: <code>&lt;finnegan&gt;My Dog&lt;finnegan&gt;</code>
+		<ul>
+			<li>If the browser is Firefox, Chrome, Safari, Opera: inline style</li>
+			<li>If the browser is IE: no style at all, all child elements are treated as siblings instead(?!)</li>
+			<li>So, if you have an <code>&lt;article&gt;</code> tag, IE will strip everything out of it and create them as sibling elements. Awesome.</li>
+		</ul></li>
+	<li>With the huge amount of IE out there, it might be problematic to start working with HTML5</li>
+	<li>However, there is a workaround and it is really easy:
+		<ul>
+			<li><code>&lt;script&gt;document.createElement("article");&lt;/script&gt;</code></li>
+			<li>This creates an element called <code>&lt;article&gt;</code> which the browser (IE, in this case) can understand and style appropriately</li>
+		</ul>
+		</li>
+	<li>Creating an entry for every element can get a bit heavy, so you can use the <a href="http://code.google.com/p/html5shiv/">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>, an HTML5 guru.</li>
+	<li>Because HTML5 understands both HTML4 and XHTML tags, you can &quot;use&quot; HTML5 today</li>
+	<li>The major caveat behind doing that?<em> HTML5 is still not a valid specification.</em></li>
+</ul>
+</div>
+
+
+
+
+
+<h2>More HTML5</h2>
+<div class="content-block">
+	<ul>
+		<li>How much of HTML5 does your browser support? Try the <a href="http://html5test.com">HTML5Test</a></li>
+		<li>Take a moment and compare the different browsers on your system - or on your smartphone!</li>
+		<li>Some excellent books on the topic of HTML5:
+			<ul>
+				<li><a href="http://books.alistapart.com/products/html5-for-web-designers">HTML5 for Web Developers by Jeremy Keith</a></li>
+				<li><a href="http://diveintohtml5.info/">Dive into HTML5 by Mark Pilgrim</a></li>
+				<li><a href="http://introducinghtml5.com/">Introducing HTML5 by Bruce Lawson and Remy Sharp</a></li>
+			</ul>
+			</li>
+	</ul>
+
+</div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<h2>css review</h2>
+			<div class="content-block">
+			<ul>
+				<li>a CSS rule defines what the HTML should look like and how it should behave in the browser window</li>
+				<li>three types of CSS rules:</li>
+				<ol>
+
+					<li><strong>HTML selector</strong> - the HTML selector (P, H3, etc.) is used to redefine how the tag displays:<br>
+					<strong>p {font: bold 16pt verdana;}</strong>
+					<li><strong>Class</strong> - a "free agent" rule that can be applied to any tag at your discretion:<br>
+					<strong>.bigText {font: bold 48pt verdana;}</strong>
+					<li><strong>ID</strong> - work like class selectors, but usually apply to only one element on the page:<br>
+
+					<strong>#navbar {position: absolute; margin-top: 20px;}</strong>
+				</ol>
+				<li><strong>parts of a CSS rule:</strong></li>
+				<ul>
+					<li><strong>selector {property: value;}</strong> = rule</li>
+					<li><strong>selector</strong> - can be HTML, class or ID</li>
+
+					<li><strong>{property: value;}</strong> = declaration</li>
+					<li><strong>properties</strong> identify what is being defined: font-family, font-weight, font-size, color, etc.</li>
+					<li><strong>values</strong> are assigned to define the nature of the property: verdana, bold, 16pt, green, etc.</li>
+				</ul>
+
+				<li><strong>rules are setup in one of three places:</strong></li>
+				<ul>
+					<li><strong>in an HTML tag:</strong> in the body of the document to affect one tag only; this is called an <strong>inline</strong> rule</li>
+					<li><strong>in the head of a document</strong> to affect an entire web page; called an <strong>embedded</strong> rule</li>
+
+					<li><strong>in an external document</strong> that is then linked or imported into your HTML page(s); called an <strong>external</strong> rule</li>
+				</ul>
+
+			</ul>
+			</div>
+
+
+			<h2>applying style sheets to web pages</h2>
+			<div class="content-block">
+			<ul>
+				<li>to set the style for an indivdual HTML tag (i.e., an inline rule), we use the following syntax:
+
+				<blockquote>
+				<code>
+				&lt;h1 style="color: red;"&gt;content&#60/h1&gt;
+
+				</code>
+				</blockquote></li>
+
+				<li>in this way we're gaining more control over the display because there's more things we can do with each tag</li>
+				<li>not a huge departure from HTML though, because we're still using a sort of "attribute/value" system</li>
+				<li>the main use for CSS is to set the styles for an entire document, which is done by adding the following to your HEAD section:
+
+				<blockquote>
+				<code>
+				&lt;style type="text/css"&gt; <br>
+
+				&nbsp;&nbsp;&nbsp;h1 {color: red;}<br>
+				&lt;/style&gt; 
+				</code>
+				</blockquote></li>
+
+				<li>in effect, isn't much different from adding style to an individual tag; except that you can manage style for ALL H1 tags in document from ONE PLACE</li>
+				<li>the major benefit of CSS is the external file: allows you to define all your styles for a site in one document, and link it to all pages</li>
+				<li>changes to a style can be made once and affect all instances of the style throughout a site</li>
+
+				<li>setting up an external CSS file is a two step process:
+				<ol>
+					<li>first, set up the rules in a separate text document and save it with a .css extension</li>
+					<li>then, link the document to each page using the &lt;link&gt; tag:
+
+					<blockquote>
+					<code>
+					&lt;head&gt;<br>
+
+					&nbsp;&nbsp;&nbsp;&lt;title&gt;document&lt;/title&gt;<br>
+					&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="filename.css"&gt;<br>
+					&lt;/head&gt;<br>
+					</code>
+					</blockquote></li>
+				</ol>
+
+
+				<li><strong>rel="stylesheet"</strong> defines the link to a stylesheet</li>
+				<li><strong>href="filename.css"</strong> is the URL for the external file</li>
+
+			</ul>
+			</div>
+
+
+
+
+	<h2>Markup Exercise</h2>
+		<div class="content-block">
+			You have <strong>two pieces of homework</strong> for this week. Please finish both:</p>
+			<ul><li><a href="exercises/content.html">Create a page for Finnegan</a> in XHTML Strict <strong>and</strong> HTML5</li>
+			<li><a href="exercises/exercise2.html">Create a page for a Realtor</a> in XHTML Strict <strong>and</strong> HTML5</li></ul>
+		</div>
+
+
+
+
+         <div id="footer">
+               <a href="#top">Top of Page</a> | <a href="/">Home</a>
+            </div>
+         </div>
+         <div id="right-content">
+            <h2 class="navhead">contents</h2>
+
+	<a href="/1950/">home</a>
+	<span class="none"> | </span>
+
+
+<h2 class="navhead">LESSONS</h2>
+
+
+	<a href="1.html">01 | introduction</a>
+	<span class="none"> | </span>
+     
+
+	<a href="2.html">02 | tools &amp; standards</a>
+	<span class="none"> | </span>
+
+	<a href="3.html">03 | HTML 5 &amp; SEO</a>
+	<span class="none"> | </span>
+
+
+	<a href="4.html">04 | css concepts</a>
+	<span class="none"> | </span>
+
+
+	<a href="5.html">05 | more css</a>
+	<span class="none"> | </span>
+
+	<a href="6.html">06 | CSS and SSIs</a>
+	<span class="none"> | </span>
+
+
+	<a href="7.html">07 | template development</a>
+	<span class="none"> | </span>
+
+	<a href="9.html">09 | methodology</a>
+	<span class="none"> | </span>
+
+	<a href="10.html">10 | jQuery / Git</a>
+	<span class="none"> | </span>
+	
+<h2 class="navhead">contact</h2>
+
+
+	<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#99;&#97;&#108;&#100;&#101;&#114;&#49;&#64;&#109;&#121;&#46;&#98;&#99;&#105;&#116;&#46;&#99;&#97;">alistair calder</a>
+	<span class="none"> | </span>
+
+
+<h2 class="navhead">associated</h2>
+	<a href="http://my.bcit.ca/">my.bcit</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.bcit.ca/">bcit</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.computing.bcit.ca/">bcit: computing</a>
+	<span class="none"> | </span>
+
+	<a href="http://www.alistair.com/">alistair.com</a>
+	<span class="none"> | </span>
+
+
+         </div>
+      </div>
+   </body>
+</html>
+
