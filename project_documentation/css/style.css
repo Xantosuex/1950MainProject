@@ -133,14 +133,32 @@
 		border-color: #FED913;
 		max-width: 80%;
 	}
-	#footer {
-		width: 100%;
+	#footer_main {
+		background-color: #FF8B13;
+		border-radius: 15px;
+		display:block;
+		height: 150px;
+		margin:5px 0px 0px 0px;	/*top, right, bottom, left*/
+	}
+	#footer_right {
+		float:right;
+		width: 40%;
 		height: auto;
 		position: relative;
-		background-color: #FF8B13;
+		text-align:right;
+		margin:5px 0px 0px 0px;	/*top, right, bottom, left*/
+		padding:0px 5px 0px 5px;	/*top, right, bottom, left*/
+		
+	}
+	#footer_left {
+		float:left;
+		width: 40%;
+		height: auto;
+		position: relative;
+		
 		margin:5px 0px 0px 0px;	/*top, right, bottom, left*/
 		padding:0px 0px 1px 5px;	/*top, right, bottom, left*/
-		border-radius: 15px;
+		
 	}
 
 	.footer_text{
