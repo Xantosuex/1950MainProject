@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>About - COMP1950 Site Docs</title>
+	<!--#include file="inc/head.inc" -->
+	<!--#set var="page_title" value="Home" -->
+</head>
+<body>
+<div id='menu_container'>
+<!--#include file="inc/menu.inc" -->
+</div>
+	<div class='content'>
+		<h1>About the COMP 10950 Proto-site</h1>
+			<p>The methods used in web design and development methodology are very similar to methods used in the sales process.  The overall processes are also analogous in more abstract ways.  One key similarity is the principle that the more time spent on the initial stages of the cycle converts to less time spent on the final stages of the project.  With this in mind, we spent a considerable amount of time planning and gaining agreement on many details of the project before we began coding.</p>
+			<h2>Wireframes</h2>
+			<p>Once we had a clear idea of the project requirements, we drew out plans for layout and menus.  This was key as it determined how content would be presented.  Our objectives were to have layout as consistent and concise as possible.  The focus was on lesson material.  We decided to include examples and exercises in lesson notes as it facilitated coherence.  We decided to include a mini-nave (menu) for each lesson in order allow for quick navigation.</p>
+			<p>We used Tumblr for the Professor’s blog.  This allowed us to capitalize on Tumblrs’ update/post GUI; allowing us to provide a very easy way to update the most frequently changing content.  Though we did not develop it, we did discuss having a student discussion forum aswell.  Though we did not reach clear consensus, most of us found it of value to have a place for students to post questions and discuss course content amongst themselves.</p>
+			<h2>Style</h2>
+			<p>Once we had developed an idea of how we would organize content, we briefly discussed style.  We referred to <a href='http://www.bcit.ca/marcom/styleguide/'>BCIT Writing Style Guide</a> in order to ensure we were compliant with guidelines.  From there, we left the details to our designated Color scheme planner.</p>
+			<p>The major typeface utilized in the proto-site is Roboto, an open type family designed for high resolution viewing on digital screens.  It  is a large typeface family with many different weights and styles to choose from (including Roboto Condensed and Roboto Slab) allowing for a flexible range of applications whilst still maintaining cohesive unity.</p>
+			<h2>Coding</h2>
+			<p>From there we divided the work amongst ourselves.  We decided to segregate tasks in order to focus on specific areas without getting in each others’ way.  With a clear plan and a shared vision, we were confident everything would come together as detailed on our notes.</p>
+			<p>This site is the definition of organization, innovative layout and responsive design.  It also just rocks overall.</p>
+	</div><!--End content-->
+</body>
+<footer>
+	<!--#include file="inc/foot.inc" -->
+</footer>
+</html>
